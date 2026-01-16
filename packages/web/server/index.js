@@ -5090,7 +5090,8 @@ if (isCliExecution) {
     tryCfTunnel: cliOptions.tryCfTunnel,
     attachSignals: true,
     exitOnShutdown: true,
-    uiPassword: cliOptions.uiPassword
+    uiPassword: cliOptions.uiPassword,
+    remoteUrl: cliOptions.remoteUrl
   }).catch(error => {
     console.error('Failed to start server:', error);
     process.exit(1);
